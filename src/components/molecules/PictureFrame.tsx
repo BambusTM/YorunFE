@@ -12,7 +12,7 @@ export default function PictureFrame({ picture = "", className = "" }: PictureFr
                 src={picture}
                 alt="code"
                 className="w-full max-h-56 object-cover"
-                style={{ borderRadius: "14px" }}
+                style={{ borderRadius: "13px"}}
             />
         </GradientBorder>
     );

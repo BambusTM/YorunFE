@@ -23,9 +23,6 @@ export default function Home() {
                     <div className="col-span-1 lg:col-span-2">
                         <RecentWork/>
                     </div>
-                    <div className="col-span-1 lg:col-span-1">
-                        <RecentWork/>
-                    </div>
                     <div className="space-y-4">
                         <TestimonialCard/>
                         <InfoCard/>
