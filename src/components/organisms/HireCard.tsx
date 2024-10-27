@@ -1,9 +1,18 @@
 import GradientBorder from "@/components/atoms/GradiantBorder";
 import { AvatarImage, Avatar, AvatarFallback } from "@/components/ui/avatar"
-import {Button} from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge"
+import Link from "next/link";
+import { Button, buttonVariants } from "@/components/ui/button";
 
 export default function HireCard() {
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText("youn@yorun.dev")
+            .then(() => {
+                console.log("Email copied to clipboard!");
+            })
+            .catch(err => console.error("Failed to copy: ", err));
+    };
+
     return (
         <div className="flex justify-centery">
             <GradientBorder borderRadius={8}>
@@ -21,7 +30,7 @@ export default function HireCard() {
 
                         <div className={"flex"}>
                             <div>
-                                <Button className={"text-foreground"}>
+                                <Link className={`${buttonVariants({variant: "default"})} rounded-lg h-full`} href={"contact"}>
                                     <h5>
                                         Hire me
                                     </h5>
@@ -29,10 +38,13 @@ export default function HireCard() {
                                          strokeWidth={1.5} stroke="currentColor" className="size-6">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
                                     </svg>
-                                </Button>
+                                </Link>
                             </div>
                             <div>
-                                <Button className={"bg-foreground text-background"}>
+                                <Button
+                                    className={"bg-foreground text-background"}
+                                    onClick={copyToClipboard}
+                                >
                                     <h5>
                                         Copy Email
                                     </h5>
