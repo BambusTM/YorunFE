@@ -5,7 +5,9 @@ export default function Home() {
     return (
         <div>
             <NavBar/>
-            <HireCard/>
+            <div className="flex justify-around">
+                <HireCard/>
+            </div>
         </div>
     );
 }
