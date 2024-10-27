@@ -1,3 +1,5 @@
+"use client";
+
 import GradientBorder from "@/components/atoms/GradiantBorder";
 import { AvatarImage, Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
