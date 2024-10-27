@@ -9,7 +9,7 @@ export interface IconLinkButtonProps {
 
 export default function IconLinkButton({ children, link }: IconLinkButtonProps) {
     return (
-        <Link className={`${buttonVariants({variant: "secondary"})} rounded-lg h-full`} href={link}>
+        <Link className={`${buttonVariants({variant: "outline"})} rounded-lg h-full`} style={{borderRadius: "15px"}} href={link}>
             {children}
         </Link>
     );

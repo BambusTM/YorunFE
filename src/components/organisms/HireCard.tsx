@@ -17,7 +17,7 @@ export default function HireCard() {
 
     return (
         <GradientBorder borderRadius={8}>
-            <div className="container mx-auto bg-border rounded-sm p-8">
+            <div className="mx-auto bg-border rounded-sm p-8 w-full">
                 <div className="flex flex-col md:flex-row justify-between pb-8">
                     <h3 className="muted">
                         Application Developer

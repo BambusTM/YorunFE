@@ -13,7 +13,7 @@ export default function GradientBorder({
                                        }: GradientBorderProps) {
     return (
         <div className={`gradient-border ${className} flex items-center justify-center`} style={{ borderRadius: `${borderRadius}px`}}>
-            <div className="gradient-inner" style={{ borderRadius: `${borderRadius}px`, margin: 0, padding: 0 }}>
+            <div className="gradient-inner w-full" style={{ borderRadius: `${borderRadius}px`, margin: 0, padding: 0 }}>
                 {children}
             </div>
         </div>
