@@ -2,15 +2,12 @@ import {Button, buttonVariants} from "@/components/ui/button";
 import Link from "next/link";
 import GradientBorder from "@/components/atoms/GradiantBorder";
 import NavBarLink from "@/components/atoms/NavBarLink";
+import DomainTitle from "@/components/atoms/DomainTitle";
 
 export default function NavBar() {
     return (
         <div className="flex items-center justify-around">
-            <div>
-                <h5>
-                    Yorun.dev
-                </h5>
-            </div>
+            <DomainTitle title={"Yorun.dev"}/>
 
             <GradientBorder borderRadius={50}>
                 <div className="bg-border rounded-full flex items-center justify-center px-1">
@@ -33,7 +30,7 @@ export default function NavBar() {
             <GradientBorder borderRadius={50}>
                 <Button
                     variant="outline"
-                    className="text-foreground py-2 px-6 rounded-lg hover:bg-primary hover:text-foreground transition-colors rounded-lg h-full"
+                    className="text-foreground py-2 px-6 hover:bg-primary hover:text-foreground transition-colors rounded-lg h-full"
                 >
                     <h5>
                         Contact Me

@@ -1,8 +1,6 @@
 "use client";
 
 import GradientBorder from "@/components/atoms/GradiantBorder";
-import { AvatarImage, Avatar, AvatarFallback } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import EmploymentStatus from "@/components/atoms/EmploymentStatus";
@@ -10,7 +8,7 @@ import MyAvatar from "@/components/atoms/MyAvatar";
 
 export default function HireCard() {
     const copyToClipboard = () => {
-        navigator.clipboard.writeText("youn@yorun.dev")
+        navigator.clipboard.writeText("yorun@yorun.dev")
             .then(() => {
                 console.log("Email copied to clipboard!");
             })
@@ -21,18 +19,17 @@ export default function HireCard() {
         <GradientBorder borderRadius={8}>
             <div className="container mx-auto bg-border rounded-sm p-8">
                 <div className="flex flex-col md:flex-row justify-between pb-8">
-                    <h3 className="deactivated">
+                    <h3 className="muted">
                         Application Developer
                     </h3>
                     <EmploymentStatus />
                 </div>
-
                 <div className="flex flex-col md:flex-row justify-between">
                     <div className="flex flex-col mb-4 md:mb-0">
                         <h1 className="font-bold">
                             I&#39;m Björn Arne Rasmus <br /> Sieckmann
                         </h1>
-                        <h4 className="deactivated">
+                        <h4 className="muted">
                             I create digital applications <br /> with great experience.
                         </h4>
 
@@ -45,7 +42,6 @@ export default function HireCard() {
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
                                 </svg>
                             </Link>
-
                             <Button
                                 className="bg-foreground text-background"
                                 onClick={copyToClipboard}
@@ -59,7 +55,6 @@ export default function HireCard() {
                             </Button>
                         </div>
                     </div>
-
                     <div className="flex justify-center md:justify-end items-center">
                         <MyAvatar/>
                     </div>

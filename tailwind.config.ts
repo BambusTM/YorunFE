@@ -96,7 +96,7 @@ const config: Config = {
 		}),
 		plugin(function({ addUtilities, theme }) {
 			addUtilities({
-				'.deactivated': {
+				'.muted': {
 					color: theme('colors.deactivated'),
 				},
 			});
