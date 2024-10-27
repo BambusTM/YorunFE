@@ -24,6 +24,7 @@ const config: Config = {
 				border: '#1b1b1b',
 				input: '#202020',
 				ring: '#f41f1f',
+				deactivated: '#C0C0C0',
 			},
 			fontFamily: {
 				Inter: ["Inter", "sans-serif"],
@@ -52,44 +53,51 @@ const config: Config = {
 					position: 'relative',
 					padding: '2px',
 					borderRadius: 'var(--tw-border-radius)',
-					background: 'linear-gradient(to right, #f41f1f, #ffffff)', // use your desired gradient colors
+					background: 'linear-gradient(to right, #f41f1f, #ffffff)',
 				},
 				'.gradient-inner': {
-					backgroundColor: '#ffffff', // inner background color
-					borderRadius: 'var(--tw-border-radius)', // same border radius
-					padding: '1rem', // adjust inner padding as needed
+					backgroundColor: '#ffffff',
+					borderRadius: 'var(--tw-border-radius)',
+					padding: '1rem',
 				},
 			});
 		}),
 		plugin(function ({ addBase, theme }) {
 			addBase({
 				h1: {
-					fontFamily: theme('fontFamily.Inter'),
+					fontFamily: "var(--font-inter)",
 					fontSize: theme('fontSize.h1'),
 				},
 				h2: {
-					fontFamily: theme('fontFamily.Poppins'),
+					fontFamily: "var(--font-poppins)",
 					fontSize: theme('fontSize.h2'),
 				},
 				h3: {
-					fontFamily: theme('fontFamily.Inter'),
+					fontFamily: "var(--font-inter)",
 					fontSize: theme('fontSize.h3'),
 				},
 				h4: {
-					fontFamily: theme('fontFamily.Inter'),
+					fontFamily: "var(--font-inter)",
 					fontSize: theme('fontSize.h4'),
 				},
 				h5: {
-					fontFamily: theme('fontFamily.Poppins'),
+					fontFamily: "var(--font-poppins)",
 					fontSize: theme('fontSize.h5'),
 				},
 				p: {
-					fontFamily: theme('fontFamily.Poppins'),
+					fontFamily: "var(--font-poppins)",
 					fontSize: theme('fontSize.body1'),
 				},
 				small: {
-					fontFamily: theme('fontFamily.Poppins'),
+					fontFamily: "var(--font-poppins)",
 					fontSize: theme('fontSize.body2'),
+				},
+			});
+		}),
+		plugin(function({ addUtilities, theme }) {
+			addUtilities({
+				'.deactivated': {
+					color: theme('colors.deactivated'),
 				},
 			});
 		}),
