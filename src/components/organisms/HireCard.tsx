@@ -5,16 +5,9 @@ import Link from "next/link";
 import { Button, buttonVariants } from "@/components/ui/button";
 import EmploymentStatus from "@/components/atoms/EmploymentStatus";
 import MyAvatar from "@/components/atoms/MyAvatar";
+import {toast} from "@/hooks/use-toast";
 
 export default function HireCard() {
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText("yorun@yorun.dev")
-            .then(() => {
-                console.log("Email copied to clipboard!");
-            })
-            .catch(err => console.error("Failed to copy: ", err));
-    };
-
     return (
         <GradientBorder borderRadius={8}>
             <div className="mx-auto bg-border rounded-sm p-8 w-full">
@@ -44,7 +37,18 @@ export default function HireCard() {
                             </Link>
                             <Button
                                 className="bg-foreground text-background"
-                                onClick={copyToClipboard}
+                                onClick={() => {
+                                    navigator.clipboard.writeText("yorun@yorun.dev").then(() => {
+                                        toast({
+                                            description: "E-Mail copied to clipboard.",
+                                        });
+                                    }).catch((error) => {
+                                        toast({
+                                            description: "Failed to copy message.",
+                                        });
+                                        console.error("Copy failed:", error);
+                                    });
+                                }}
                             >
                                 <h5>Copy Email</h5>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"

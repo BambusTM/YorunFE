@@ -19,10 +19,14 @@ const contacts = [
         trigger: "E-Mail",
         content: "yorun@yorun.dev"
     },
+    {
+        trigger: "Name",
+        content: "Björn Arne Rasmus Sieckmann"
+    }
 ]
 
 export default function ImpressContent() {
-    const { toast } = useToast()
+    const {toast} = useToast()
 
     return (
         <GradientBorder borderRadius={9}>
@@ -30,7 +34,33 @@ export default function ImpressContent() {
                 <h2 className={"font-bold"}>
                     Impress
                 </h2>
-
+                <h4>
+                    Disclaimer
+                </h4>
+                <p className={"text-body2 py-1"}>
+                    The information provided on this website is for general informational purposes only. <br/>
+                    All content is provided in good faith; however, we make no representations or warranties of any <br/>
+                    kind, express or implied, about the completeness, accuracy, reliability, suitability, <br/>
+                    or availability with respect to the website or the information, products, services, or related graphics contained on the website.
+                </p>
+                <p className={"text-body2 py-1"}>
+                    In no event will we be liable for any loss or damage, including without limitation, indirect or <br/>
+                    consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits <br/>
+                    arising out of, or in connection with, the use of this website.
+                </p>
+                <p className={"text-body2 py-1"}>
+                    This website may contain links to external sites that are not provided or maintained by us. We have <br/>
+                    no control over the content, privacy policies, or practices of any external sites. <br/>
+                </p>
+                <p className={"text-body2 py-1"}>
+                    All content on this website is the property of [Your Name or Company Name]. Unauthorized use and/or <br/>
+                    duplication of this material without express and written permission from this site’s owner is <br/>
+                    strictly prohibited.
+                </p>
+                <p className={"text-body2 py-1"}>
+                    We reserve the right to modify or remove any content on this website at any time without prior
+                    notice.
+                </p>
                 <Accordion type="single" collapsible>
                     {contacts.map((contact, index) => (
                         <AccordionItem value={`item-${index}`} key={contact.trigger}>
@@ -47,11 +77,11 @@ export default function ImpressContent() {
                                     onClick={() => {
                                         navigator.clipboard.writeText(contact.content).then(() => {
                                             toast({
-                                                description: "Your message has been copied to clipboard.",
+                                                description: `${contact.trigger} copied to clipboard!`,
                                             });
                                         }).catch((error) => {
                                             toast({
-                                                description: "Failed to copy message.",
+                                                description: "Failed to copy message!",
                                             });
                                             console.error("Copy failed:", error);
                                         });
@@ -67,7 +97,6 @@ export default function ImpressContent() {
                         </AccordionItem>
                     ))}
                 </Accordion>
-
             </div>
         </GradientBorder>
     );
