@@ -23,6 +23,10 @@ const contacts = [
         trigger: "Phone Number",
         content: "+41 79 380 11 96"
     },
+    {
+        trigger: "Adress",
+        content: "Spiegelstrasse 87, 3095 Spiegel b. Bern"
+    }
 ]
 
 export default function ImpressContent() {
