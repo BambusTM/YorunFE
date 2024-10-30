@@ -3,7 +3,6 @@ import {Inter, Poppins} from "next/font/google";
 import "./globals.css";
 import {Toaster} from "@/components/ui/toaster";
 import NavBar from "@/components/organisms/NavBar";
-import ImpressContent from "@/components/organisms/ImpressContent";
 import Footer from "@/components/organisms/Footer";
 
 const inter = Inter({

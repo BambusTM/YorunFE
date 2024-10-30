@@ -1,16 +1,14 @@
 import SkillsCard from "@/components/organisms/SkillsCard";
+import TestimonialCard from "@/components/molecules/TestimonialCard";
 
 export default function About() {
     return (
-        <div className="grid grid-cols-3">
-            <div className={"grid-cols-1"}>
-                <SkillsCard/>
+        <div className="grid grid-cols-4 gap-8">
+            <div className="md:col-span-2">
+                <SkillsCard />
             </div>
-            <div className={"grid-cols-2"}>
-                <SkillsCard/>
-            </div>
-            <div className={"grid-cols-3"}>
-                <SkillsCard/>
+            <div className="md:col-span-2">
+                <TestimonialCard />
             </div>
         </div>
     );
