@@ -4,9 +4,18 @@ import ProjectCard from "@/components/organisms/ProjectCard";
 
 const projects = [
     {
+        title: "SideQuest",
+        description: "As my role as scrum master, I work with the help of my team on a project called 'SideQuest'. SideQuest is a platform that allows users to create and share their own quests.",
+        duration: "August 2024 - Present",
+        technology: ["React", "TypeScript", "MUI", "Storybook"],
+        image: "/assets/sideQuest.png",
+        website: "",
+        github: "",
+    },
+    {
         title: "Portfolio Frontend",
         description: "I created this portfolio site that you are visiting right now for a school module. The goal of this module is, to create a mockup followed by the implementation in any frontend-framework or even just plain HTML-5 & CSS. I chose to make this website using Next.js, Tailwind and Shadcn.",
-        duration: "17.10.2024 - 31.10.2024",
+        duration: "17.10.2024 - Present",
         technology: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn ui", "EmailJS", "zod"],
         image: "/assets/portfolio.png",
         website: "https://guthib.com/",
@@ -23,11 +32,12 @@ const projects = [
     },
     {
         title: "VroomVroom",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        duration: "2023 - 2024",
-        technology: ["React", "TypeScript", "MUI", "Cypress", "yup"],
+        description: "",
+        duration: "December 2023 - July 2024",
+        technology: ["React", "TypeScript", "MUI", "Cypress", "yup", "SpringBoot", "Java", "PostgreSQL", "Swagger" ],
         image: "/assets/vroomVroom.png",
-        github: "https://github.com/NoserYoungGroupOne/car-api",
+        website: "",
+        github: "",
     },
     {
         title: "Little Bamboo",
@@ -35,7 +45,8 @@ const projects = [
         duration: "September 2023 - October 2023",
         technology: ["HTML", "CSS"],
         image: "/assets/littleBamboo.png",
-        github: "https://github.com/NoserYoungGroupOne/Little-Bamboo",
+        website: "",
+        github: "",
     },
 ];
 
