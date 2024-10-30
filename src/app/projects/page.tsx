@@ -32,7 +32,7 @@ const projects = [
     },
     {
         title: "VroomVroom",
-        description: "",
+        description: "This project was an opportunity to learn the process of creating a fullstack application. I worked as the leader of team of 6 trainees to create a API, capable of creating, sorting, storing and manipulating car data. The frontend part consisted of creating a unfriendly UI to the API.",
         duration: "December 2023 - July 2024",
         technology: ["React", "TypeScript", "MUI", "Cypress", "yup", "SpringBoot", "Java", "PostgreSQL", "Swagger" ],
         image: "/assets/vroomVroom.png",

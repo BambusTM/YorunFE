@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <div className="min-h-screen flex justify-between flex-col px-1">
             <NavBar/>
-            <div className="space-y-4 flex justify-around">
+            <div className="py-12 container mx-auto max-w-screen-md">
                 <ContactCard/>
             </div>
             <Footer/>
