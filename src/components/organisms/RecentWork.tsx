@@ -8,25 +8,30 @@ import {
 
 const jobs = [
     {
-        job: "SideQuest",
+        job: "NoserYoung AG",
+        timePeriod: "2023 - Present",
+        description: "Application Developer",
+    },
+    {
+        job: "Gibb",
         timePeriod: "2024 - Present",
-        technology: "React, SpringBoot",
+        description: "Vocational school",
     },
     {
-        job: "VroomVroomFE",
-        timePeriod: "2024 - 2024",
-        Technology: "React, MUI",
-    },
-    {
-        job: "VroomVroomBE",
-        timePeriod: "2023 - 2024",
-        technology: "SpringBoot",
-    },
-    {
-        job: "LittleBamboo",
+        job: "Genki Jaks",
         timePeriod: "2023 - 2023",
-        technology: "HTML, CSS, JS, Bootstrap",
+        description: "Japanese Language School",
     },
+    {
+        job: "Sympany AG",
+        timePeriod: "2021 - 2022",
+        description: "ICT Support",
+    },
+    {
+        job: "RSSB Highschool",
+        timePeriod: "2018 - 2020",
+        description: "Rudolf Steiner School Basel",
+    }
 ]
 
 export default function RecentWork() {
@@ -44,7 +49,7 @@ export default function RecentWork() {
                         {jobs.map((job, index) => (
                             <TableRow key={job.job}>
                                 <TableCell className="font-medium">
-                                    <h4 className={index === 0 ? "text-primary" : ""}>
+                                    <h4 className={index === 0 || index === 1 ? "text-primary" : ""}>
                                         {job.job} <br/>
                                     </h4>
                                     <h5 className="muted py-2">
@@ -53,7 +58,7 @@ export default function RecentWork() {
                                 </TableCell>
                                 <TableCell className="text-right align-top">
                                     <h5 className="muted">
-                                        {job.technology}
+                                        {job.description}
                                     </h5>
                                 </TableCell>
                             </TableRow>

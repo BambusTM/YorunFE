@@ -4,8 +4,13 @@ export default function InfoCard() {
     return (
         <GradientBorder borderRadius={8}>
             <div className="mx-auto bg-border rounded-sm p-8 w-full h-full">
+                <div className={"pb-6"}>
+                    <h2 className={"font-bold"}>
+                        About Me
+                    </h2>
+                </div>
                 <p className={"text-body1"}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    I’m an ambitious programmer with a strong drive to expand my skills and a genuine enthusiasm for learning. I thrive on the challenges that programming brings and am always looking to refine my abilities. Collaborating with a team is one of my favorite aspects of the work, as I enjoy the synergy of shared ideas and the opportunity to learn from others. I’m excited to contribute my energy and passion for coding to achieve both personal and team goals.
                 </p>
             </div>
         </GradientBorder>

@@ -8,14 +8,14 @@ export default function TestimonialCard() {
                 <div className={"flex justify-between"}>
                     <div className={"flex pb-5 items-center"}>
                         <div className={"pr-5"}>
-                            <MyAvatar size={"h-16 w-16"} picture={"/assets/alex.jpeg"}/>
+                            <MyAvatar size={"h-16 w-16"} picture={"/assets/sympany.jpg"}/>
                         </div>
                         <div>
                             <h5>
-                                Alexander Schmidt
+                                Sympany AG
                             </h5>
                             <p className={"text-body2 muted"}>
-                                Chef First Level Support Sympany
+                                Manager of ICT Support
                             </p>
                         </div>
                     </div>
@@ -30,9 +30,7 @@ export default function TestimonialCard() {
                 </div>
                 <div>
                     <p className={"text-body1"}>
-                        s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the, s simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.
+                        Herr Sieckmann erfüllte unsere Anforderungen in jeder Beziehung und mit seiner Zielerreichung waren wir sehr zufrieden. Er verfügt über sehr hohes organisatorisches Geschick und war durch seine zügige und systematische Arbeitsweise auch stärstem Arbeitsanfall jederzeit gewachse. Sein Engagement übertraf unsere Erwartungen. Herr Sieckmann arbeitete dabei selbstständig, eigenverantwortlich und mit hoher Motivation. Mit seiner sehr zuverlässigen und genauen Arbeitsweise waren wir stets zufrieden.
                     </p>
                 </div>
             </div>
