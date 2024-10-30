@@ -44,17 +44,17 @@ export default function RecentWork() {
                         {jobs.map((job, index) => (
                             <TableRow key={job.job}>
                                 <TableCell className="font-medium">
-                                    <h3 className={index === 0 ? "text-primary" : ""}>
+                                    <h4 className={index === 0 ? "text-primary" : ""}>
                                         {job.job} <br/>
-                                    </h3>
-                                    <h4 className="muted py-2">
-                                        {job.timePeriod}
                                     </h4>
+                                    <h5 className="muted py-2">
+                                        {job.timePeriod}
+                                    </h5>
                                 </TableCell>
                                 <TableCell className="text-right align-top">
-                                    <h4 className="muted">
+                                    <h5 className="muted">
                                         {job.technology}
-                                    </h4>
+                                    </h5>
                                 </TableCell>
                             </TableRow>
                         ))}
