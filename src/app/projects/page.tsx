@@ -50,14 +50,14 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="container mx-auto px-4 py-8 grid grid-cols-2 gap-4 auto-rows-min">
+        <div className="grid grid-cols-2 auto-rows-min">
             {projects.map((project, index) => (
                 <div
                     key={index}
                     className="p-4 transform transition-transform duration-300 hover:scale-105"
                     style={{
-                        gridColumn: (index % 2) + 1, // Alternates between column 1 and 2
-                        gridRow: `${index + 1} / span 2`, // Spans 2 rows, starting on every odd row
+                        gridColumn: (index % 2) + 1,
+                        gridRow: `${index + 1} / span 2`,
                     }}
                 >
                     <ProjectCard

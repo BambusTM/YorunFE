@@ -32,7 +32,9 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
 
         <div className="min-h-screen flex justify-between flex-col px-1">
             <NavBar/>
-            {children}
+            <div className={"container mx-auto p-8"}>
+                {children}
+            </div>
             <Footer/>
         </div>
         <Toaster/>

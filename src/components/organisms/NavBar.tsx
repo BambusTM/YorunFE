@@ -36,7 +36,7 @@ export default function NavBar() {
 
                         <NavBarLink href={"about"} text={"About"} />
                         <NavBarLink href={"projects"} text={"Projects"} />
-                        <NavBarLink href={"portfolio"} text={"Portfolio"} />
+                        <NavBarLink href={"#"} text={"coming soon"} />
                     </div>
                 </GradientBorder>
 
