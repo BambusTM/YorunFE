@@ -9,6 +9,7 @@ const projects = [
         duration: "17.10.2024 - 31.10.2024",
         technology: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn ui", "EmailJS", "zod"],
         image: "/assets/portfolio.png",
+        website: "https://guthib.com/",
         github: "https://github.com/BambusTM/YorunFE",
     },
     {
@@ -21,18 +22,10 @@ const projects = [
         github: "https://github.com/BambusTM/YorunFE",
     },
     {
-        title: "VroomVroom Frontend",
+        title: "VroomVroom",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
         duration: "2023 - 2024",
         technology: ["React", "TypeScript", "MUI", "Cypress", "yup"],
-        image: "/assets/vroomVroom.png",
-        github: "https://github.com/NoserYoungGroupOne/car-api",
-    },
-    {
-        title: "VroomVroom Backend",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
-        duration: "2023 - 2024",
-        technology: ["Spring Boot", "Java", "Gradle", "JUnit", "Swagger"],
         image: "/assets/vroomVroom.png",
         github: "https://github.com/NoserYoungGroupOne/car-api",
     },
