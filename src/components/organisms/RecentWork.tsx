@@ -34,30 +34,31 @@ export default function RecentWork() {
         <GradientBorder borderRadius={8}>
             <div className="container mx-auto bg-border rounded-sm p-8">
                 <div className={"pb-6"}>
-                    <h3>
+                    <h2 className={"font-bold"}>
                         Recent Work
-                    </h3>
+                    </h2>
                 </div>
 
                 <Table>
                     <TableBody>
-                        {jobs.map((job) => (
+                        {jobs.map((job, index) => (
                             <TableRow key={job.job}>
                                 <TableCell className="font-medium">
-                                    <h3>
+                                    <h3 className={index === 0 ? "text-primary" : ""}>
                                         {job.job} <br/>
                                     </h3>
-                                    <h4 className="muted">
+                                    <h4 className="muted py-2">
                                         {job.timePeriod}
                                     </h4>
                                 </TableCell>
-                                <TableCell className="text-right">
+                                <TableCell className="text-right align-top">
                                     <h4 className="muted">
                                         {job.technology}
                                     </h4>
                                 </TableCell>
                             </TableRow>
                         ))}
+
                     </TableBody>
                 </Table>
             </div>

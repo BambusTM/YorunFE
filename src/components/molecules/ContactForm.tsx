@@ -2,7 +2,6 @@
 
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import { z } from "zod";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -16,6 +15,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import emailjs from 'emailjs-com';
+import {z} from "zod";
 
 const inputFields = [
     {
@@ -37,9 +37,9 @@ const inputFields = [
 
 const formSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
-    email: z.string().email({ message: "Please use a valid email format." }),
-    reference: z.string().max(50, { message: "Reference can't be longer than 50 characters." }),
-    message: z.string().max(250, { message: "Message can't be longer than 250 characters." }),
+    email: z.string().email({ message: "Please use a valid email format." }).min(1),
+    reference: z.string().max(50, { message: "Reference can't be longer than 50 characters." }).max(1),
+    message: z.string().max(250, { message: "Message can't be longer than 250 characters." }).min(1),
 });
 
 export function ContactForm() {
