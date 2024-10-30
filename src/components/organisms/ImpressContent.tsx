@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/accordion"
 import {Button} from "@/components/ui/button";
 import {useToast} from "@/hooks/use-toast";
+import {Separator} from "@/components/ui/separator";
 
 const contacts = [
     {
@@ -65,6 +66,9 @@ export default function ImpressContent() {
                     We reserve the right to modify or remove any content on this website at any time without prior
                     notice.
                 </p>
+
+                <Separator className="my-4 bg-card-foreground" />
+
                 <Accordion type="single" collapsible>
                     {contacts.map((contact, index) => (
                         <AccordionItem value={`item-${index}`} key={contact.trigger}>
