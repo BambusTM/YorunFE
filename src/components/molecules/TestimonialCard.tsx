@@ -15,7 +15,7 @@ export default function TestimonialCard() {
                                 Sympany AG
                             </h5>
                             <p className={"text-body2 muted"}>
-                                Manager of ICT Support
+                                Manager of ICT Support (German)
                             </p>
                         </div>
                     </div>
