@@ -31,8 +31,8 @@ const jobs = [
 
 export default function RecentWork() {
     return (
-        <GradientBorder borderRadius={8}>
-            <div className="container mx-auto bg-border rounded-sm p-8">
+        <GradientBorder borderRadius={8} className="h-full">
+            <div className="container mx-auto bg-border rounded-sm p-8 h-full">
                 <div className={"pb-6"}>
                     <h2 className={"font-bold"}>
                         Recent Work
