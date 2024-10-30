@@ -1,6 +1,6 @@
-import ImpressContent from "@/components/organisms/ImpressContent"
+import ImpressContent from "@/components/organisms/ImpressContent";
 
-export default function Impress() {
+export default function Portfolio() {
     return (
         <div className="py-12 flex justify-around">
             <ImpressContent/>

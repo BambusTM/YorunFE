@@ -9,7 +9,7 @@ export interface NavBarLinkProps {
 export default function NavBarLink({href, text}: NavBarLinkProps) {
     return (
         <Link className={`${buttonVariants({variant: "outline"})} rounded-full h-full bg-transparent border-none`} href={href}>
-            <h5 className="">
+            <h5>
                 {text}
             </h5>
         </Link>

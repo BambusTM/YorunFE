@@ -61,8 +61,8 @@ export default function HireCard() {
                             </Button>
                         </div>
                     </div>
-                    <div className="flex justify-center md:justify-end items-center">
-                        <MyAvatar picture={"assets/me.png"}/>
+                    <div className="flex h- justify-center md:justify-end items-center">
+                        <MyAvatar picture={"assets/me.png"} size={"w-60 h-60"}/>
                     </div>
                 </div>
             </div>

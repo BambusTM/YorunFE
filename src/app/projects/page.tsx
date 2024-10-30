@@ -1,5 +1,3 @@
-import NavBar from "@/components/organisms/NavBar";
-import Footer from "@/components/organisms/Footer";
 import ProjectCard from "@/components/organisms/ProjectCard";
 
 const projects = [
@@ -34,7 +32,7 @@ const projects = [
         title: "VroomVroom",
         description: "This project was an opportunity to learn the process of creating a fullstack application. I worked as the leader of team of 6 trainees to create a API, capable of creating, sorting, storing and manipulating car data. The frontend part consisted of creating a unfriendly UI to the API.",
         duration: "December 2023 - July 2024",
-        technology: ["React", "TypeScript", "MUI", "Cypress", "yup", "SpringBoot", "Java", "PostgreSQL", "Swagger" ],
+        technology: ["React", "TypeScript", "MUI", "Cypress", "yup", "SpringBoot", "Java", "PostgreSQL", "Swagger"],
         image: "/assets/vroomVroom.png",
         website: "",
         github: "",
@@ -52,32 +50,27 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="min-h-screen flex flex-col px-1">
-            <NavBar/>
-            <div className="container mx-auto px-4 py-8 grid grid-cols-2 gap-4 auto-rows-min">
-                {projects.map((project, index) => (
-                    <div
-                        key={index}
-                        className="p-4 transform transition-transform duration-300 hover:scale-105"
-                        style={{
-                            gridColumn: (index % 2) + 1, // Alternates between column 1 and 2
-                            gridRow: `${index + 1} / span 2`, // Spans 2 rows, starting on every odd row
-                        }}
-                    >
-                        <ProjectCard
-                            title={project.title}
-                            description={project.description}
-                            duration={project.duration}
-                            technology={project.technology}
-                            image={project.image}
-                            website={project.website}
-                            github={project.github}
-                        />
-                    </div>
-                ))}
-            </div>
-
-            <Footer/>
+        <div className="container mx-auto px-4 py-8 grid grid-cols-2 gap-4 auto-rows-min">
+            {projects.map((project, index) => (
+                <div
+                    key={index}
+                    className="p-4 transform transition-transform duration-300 hover:scale-105"
+                    style={{
+                        gridColumn: (index % 2) + 1, // Alternates between column 1 and 2
+                        gridRow: `${index + 1} / span 2`, // Spans 2 rows, starting on every odd row
+                    }}
+                >
+                    <ProjectCard
+                        title={project.title}
+                        description={project.description}
+                        duration={project.duration}
+                        technology={project.technology}
+                        image={project.image}
+                        website={project.website}
+                        github={project.github}
+                    />
+                </div>
+            ))}
         </div>
     );
 }

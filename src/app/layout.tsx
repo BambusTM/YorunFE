@@ -2,6 +2,9 @@ import type {Metadata} from "next";
 import {Inter, Poppins} from "next/font/google";
 import "./globals.css";
 import {Toaster} from "@/components/ui/toaster";
+import NavBar from "@/components/organisms/NavBar";
+import ImpressContent from "@/components/organisms/ImpressContent";
+import Footer from "@/components/organisms/Footer";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -26,8 +29,13 @@ export default function RootLayout({children}: Readonly<{ children: React.ReactN
         <body
             className={`${inter.variable} ${poppins.variable} antialiased`}
         >
+
+        <div className="min-h-screen flex justify-between flex-col px-1">
+            <NavBar/>
             {children}
-        <Toaster />
+            <Footer/>
+        </div>
+        <Toaster/>
         </body>
         </html>
     );

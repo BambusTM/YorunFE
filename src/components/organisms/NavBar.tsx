@@ -1,4 +1,4 @@
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import GradientBorder from "@/components/atoms/GradiantBorder";
 import NavBarLink from "@/components/atoms/NavBarLink";
@@ -41,12 +41,9 @@ export default function NavBar() {
                 </GradientBorder>
 
                 <GradientBorder borderRadius={50}>
-                    <Button
-                        variant="outline"
-                        className="text-foreground py-2 px-6 hover:bg-primary hover:text-foreground transition-colors rounded-lg h-full"
-                    >
-                        <h5>Contact Me</h5>
-                    </Button>
+                    <div className="bg-border rounded-full flex items-center justify-center">
+                        <NavBarLink href={"contact"} text={"Contact Me"} />
+                    </div>
                 </GradientBorder>
             </div>
 
