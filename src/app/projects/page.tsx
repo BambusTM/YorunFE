@@ -54,23 +54,29 @@ export default function Projects() {
     return (
         <div className="min-h-screen flex flex-col px-1">
             <NavBar/>
-            <div className="container mx-auto px-4 py-8 grid">
-                <div className="grid grid-cols-1 md:grid-cols-2">
-                    {projects.map((project, index) => (
-                        <div key={index} className={`md:row-start-${index + 1} md:row-span-2 p-4`}>
-                            <ProjectCard
-                                title={project.title}
-                                description={project.description}
-                                duration={project.duration}
-                                technology={project.technology}
-                                image={project.image}
-                                website={project.website}
-                                github={project.github}
-                            />
-                        </div>
-                    ))}
-                </div>
+            <div className="container mx-auto px-4 py-8 grid grid-cols-2 gap-4 auto-rows-min">
+                {projects.map((project, index) => (
+                    <div
+                        key={index}
+                        className="p-4 transform transition-transform duration-300 hover:scale-105"
+                        style={{
+                            gridColumn: (index % 2) + 1, // Alternates between column 1 and 2
+                            gridRow: `${index + 1} / span 2`, // Spans 2 rows, starting on every odd row
+                        }}
+                    >
+                        <ProjectCard
+                            title={project.title}
+                            description={project.description}
+                            duration={project.duration}
+                            technology={project.technology}
+                            image={project.image}
+                            website={project.website}
+                            github={project.github}
+                        />
+                    </div>
+                ))}
             </div>
+
             <Footer/>
         </div>
     );
