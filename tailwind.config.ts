@@ -22,7 +22,7 @@ const config: Config = {
     				foreground: '#ffffff'
     			},
     			border: '#1b1b1b',
-    			input: '#202020',
+    			input: '#2c2c2c',
     			ring: '#f41f1f',
     			deactivated: '#C0C0C0'
     		},
