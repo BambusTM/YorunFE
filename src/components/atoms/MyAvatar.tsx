@@ -3,19 +3,22 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 interface MyAvatarProps {
     size?: string;
+    picture?: string;
 }
 
-export default function MyAvatar({ size = "w-40 h-40" }: MyAvatarProps) {
+export default function MyAvatar({ size = "w-40 h-40", picture =  "" }: MyAvatarProps) {
     return (
         <GradientBorder borderRadius={100} className={"rounded-full"}>
             <Avatar className={`flex items-center justify-center ${size}`}>
                 <AvatarImage
-                    src="../../assets/me.png"
+                    src={picture}
                     alt="@shadcn"
                     className={`object-cover ${size}`}
                     style={{ borderRadius: "100px" }}
                 />
-                <AvatarFallback>BS</AvatarFallback>
+                <AvatarFallback>
+                    BS
+                </AvatarFallback>
             </Avatar>
         </GradientBorder>
     );

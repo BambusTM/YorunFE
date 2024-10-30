@@ -8,14 +8,14 @@ export default function TestimonialCard() {
                 <div className={"flex justify-between"}>
                     <div className={"flex pb-5 items-center"}>
                         <div className={"pr-5"}>
-                            <MyAvatar size={"h-16 w-16"}/>
+                            <MyAvatar size={"h-16 w-16"} picture={"/assets/alex.jpeg"}/>
                         </div>
                         <div>
                             <h5>
-                                Example Name
+                                Alexander Schmidt
                             </h5>
                             <p className={"text-body2 muted"}>
-                                Ausbilder NoserYoung AG
+                                Chef First Level Support Sympany
                             </p>
                         </div>
                     </div>

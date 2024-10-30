@@ -29,7 +29,9 @@ export default function HireCard() {
                         <div className="flex flex-col sm:flex-row mt-4">
                             <Link className={`${buttonVariants({variant: "default"})} rounded-lg mb-2 sm:mb-0 sm:mr-2`}
                                   href={"contact"}>
-                                <h5>Hire me</h5>
+                                <h5>
+                                    Hire me
+                                </h5>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                                      strokeWidth={1.5} stroke="currentColor" className="size-6">
                                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
@@ -60,7 +62,7 @@ export default function HireCard() {
                         </div>
                     </div>
                     <div className="flex justify-center md:justify-end items-center">
-                        <MyAvatar/>
+                        <MyAvatar picture={"assets/me.png"}/>
                     </div>
                 </div>
             </div>
