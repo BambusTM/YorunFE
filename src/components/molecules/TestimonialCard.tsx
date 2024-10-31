@@ -3,7 +3,7 @@ import MyAvatar from "@/components/atoms/MyAvatar";
 
 export default function TestimonialCard() {
     return (
-        <GradientBorder borderRadius={8} className={"h-full"}>
+        <GradientBorder borderRadius={8}>
             <div className="mx-auto bg-border rounded-sm p-8 w-full h-full">
                 <div className={"flex justify-between"}>
                     <div className={"flex pb-5 items-center"}>
