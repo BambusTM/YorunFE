@@ -33,7 +33,7 @@ const languages = [
 export default function LanguageCard() {
     return (
         <GradientBorder borderRadius={8} className="h-full">
-            <div className="grid grid-cols-3 mx-auto bg-border gap-8 rounded-sm p-12 h-full">
+            <div className="grid grid-cols-2 md:grid-cols-3 mx-auto bg-border gap-8 rounded-sm p-12 h-full">
                 <div className={"grid-cols-1"}>
                     <h2 className={"font-bold"}>
                         Language Skill Level

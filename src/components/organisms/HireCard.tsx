@@ -9,15 +9,15 @@ import {toast} from "@/hooks/use-toast";
 
 export default function HireCard() {
     return (
-        <GradientBorder borderRadius={8}>
-            <div className="mx-auto bg-border rounded-sm p-8 w-full">
+        <GradientBorder borderRadius={8} className={"h-full"}>
+            <div className="mx-auto bg-border rounded-sm p-8 w-full h-full">
                 <div className="flex flex-col md:flex-row justify-between pb-8">
                     <h3 className="muted">
                         Application Developer
                     </h3>
                     <EmploymentStatus />
                 </div>
-                <div className="flex flex-col md:flex-row justify-between">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
                     <div className="flex flex-col mb-4 md:mb-0">
                         <h1 className="font-bold">
                             I&#39;m Björn Arne Rasmus <br /> Sieckmann
@@ -27,7 +27,7 @@ export default function HireCard() {
                         </h4>
 
                         <div className="flex flex-col sm:flex-row mt-4">
-                            <Link className={`${buttonVariants({variant: "default"})} rounded-lg mb-2 sm:mb-0 sm:mr-2`}
+                            <Link className={`${buttonVariants({ variant: "default" })} rounded-lg mb-2 sm:mb-0 sm:mr-2`}
                                   href={"contact"}>
                                 <h5>
                                     Hire me
@@ -61,8 +61,8 @@ export default function HireCard() {
                             </Button>
                         </div>
                     </div>
-                    <div className="flex h- justify-center md:justify-end items-center">
-                        <MyAvatar picture={"assets/me.png"} size={"w-60 h-60"}/>
+                    <div className="flex justify-center md:justify-end items-center max-w-full md:max-w-xs overflow-hidden">
+                        <MyAvatar picture={"assets/me.png"} size={"w-60 h-60"} />
                     </div>
                 </div>
             </div>

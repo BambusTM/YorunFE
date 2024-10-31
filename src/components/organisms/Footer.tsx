@@ -31,7 +31,7 @@ export default function Footer() {
 
                 <GradientBorder borderRadius={50}>
                     <div className="bg-border rounded-full flex items-center justify-center px-1">
-                        <NavBarLink href={"impress"} text={"impress"} />
+                        <NavBarLink href={"imprint"} text={"imprint"} />
                     </div>
                 </GradientBorder>
             </div>
@@ -57,7 +57,7 @@ export default function Footer() {
 
                 <GradientBorder borderRadius={50}>
                     <div className="bg-border rounded-full flex items-center justify-center p-2">
-                        <NavBarLink href={"impress"} text={"impress"} />
+                        <NavBarLink href={"imprint"} text={"imprint"} />
                     </div>
                 </GradientBorder>
             </div>

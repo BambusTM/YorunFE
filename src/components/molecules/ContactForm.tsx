@@ -17,6 +17,7 @@ import {Textarea} from "@/components/ui/textarea";
 import emailjs from 'emailjs-com';
 import {z} from "zod";
 import GradientBorder from "@/components/atoms/GradiantBorder";
+import {useToast} from "@/hooks/use-toast";
 
 const inputFields = [
     {
@@ -39,11 +40,13 @@ const inputFields = [
 const formSchema = z.object({
     name: z.string().min(2, {message: "Name must be at least 2 characters."}),
     email: z.string().email({message: "Please use a valid email format."}).min(1),
-    reference: z.string().max(50, {message: "Reference can't be longer than 50 characters."}).max(1),
+    reference: z.string().max(50, {message: "Reference can't be longer than 50 characters."}).min(1),
     message: z.string().max(250, {message: "Message can't be longer than 250 characters."}).min(1),
 });
 
 export function ContactForm() {
+    const {toast} = useToast()
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -65,11 +68,19 @@ export function ContactForm() {
                 message: values.message,
             },
             process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
-        )
-            .then((response) => {
+        ).then((response) => {
+                toast({
+                    variant: "default",
+                    description: `Form sent successfully!`,
+                });
                 console.log("Email sent successfully:", response.status, response.text);
+                form.reset();
             })
             .catch((error) => {
+                toast({
+                    variant: "destructive",
+                    description: `Form sent successfully!`,
+                });
                 console.error("Failed to send email:", error);
             });
     }

@@ -10,9 +10,9 @@ export default function LanguageSkill({language = "", skillLevel = 0, children}:
     return(
         <div>
             {children}
-            <h4>
+            <h5>
                 {language}
-            </h4>
+            </h5>
             <Progress value={skillLevel} />
         </div>
     );

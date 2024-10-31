@@ -42,13 +42,13 @@ export default function NavBar() {
 
                 <GradientBorder borderRadius={50}>
                     <div className="bg-border rounded-full flex items-center justify-center">
-                        <NavBarLink href={"#"} text={"comming soon"} />
+                        <NavBarLink href={"contact"} text={"Contact Me"} />
                     </div>
                 </GradientBorder>
             </div>
 
             {/* Mobile Navbar */}
-            <div className="fixed bottom-0 w-full md:hidden bg-background py-2 z-10">
+            <div className="fixed bottom-0 w-full md:hidden bg-background py-4 z-10">
                 <GradientBorder borderRadius={50}>
                     <div className="bg-border rounded-full flex items-center justify-around px-4 py-2">
                         <Link
@@ -74,7 +74,7 @@ export default function NavBar() {
 
                         <NavBarLink href={"about"} text={"About"} />
                         <NavBarLink href={"projects"} text={"Projects"} />
-                        <NavBarLink href={"portfolio"} text={"Portfolio"} />
+                        <NavBarLink href={"#"} text={"soon"} />
                     </div>
                 </GradientBorder>
             </div>

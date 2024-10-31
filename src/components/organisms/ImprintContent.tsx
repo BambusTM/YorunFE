@@ -30,14 +30,14 @@ const contacts = [
     }
 ]
 
-export default function ImpressContent() {
+export default function ImprintContent() {
     const {toast} = useToast()
 
     return (
         <GradientBorder borderRadius={9}>
             <div className="mx-auto bg-border rounded-sm p-8 w-full">
                 <h2 className={"font-bold text-center"}>
-                    Impress
+                    Imprint
                 </h2>
                 <h3>
                     Disclaimer
@@ -95,6 +95,7 @@ export default function ImpressContent() {
                                                     });
                                                 }).catch((error) => {
                                                     toast({
+                                                        variant: "destructive",
                                                         description: "Failed to copy message!",
                                                     });
                                                     console.error("Copy failed:", error);
