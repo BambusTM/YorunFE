@@ -14,11 +14,11 @@ const jobs = [
     },
     {
         job: "Gibb",
-        timePeriod: "2024 - Present",
+        timePeriod: "2023 - Present",
         description: "Vocational school",
     },
     {
-        job: "Genki Jaks",
+        job: "Genki Jacks",
         timePeriod: "2023 - 2023",
         description: "Japanese Language School",
     },

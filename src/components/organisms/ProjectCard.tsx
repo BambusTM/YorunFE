@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import {buttonVariants} from "@/components/ui/button";
+import {className} from "postcss-selector-parser";
 
 interface ProjectCardProps {
     title: string;
@@ -26,7 +27,7 @@ export default function ProjectCard({
                                         github
                                     }: ProjectCardProps) {
     return (
-        <GradientBorder borderRadius={10}>
+        <GradientBorder borderRadius={10} className={"w-full"}>
             <div className="bg-border rounded-sm p-8 w-full h-full">
                 {image && (
                     <img

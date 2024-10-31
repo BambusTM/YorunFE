@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/organisms/ProjectCard";
+import {isMobile} from 'react-device-detect';
 
 const projects = [
     {
@@ -50,15 +51,11 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="grid grid-cols-2 auto-rows-min">
+        <div className="grid grid-cols-1 auto-rows-min">
             {projects.map((project, index) => (
                 <div
                     key={index}
                     className="p-4 transform transition-transform duration-300 hover:scale-105"
-                    style={{
-                        gridColumn: (index % 2) + 1,
-                        gridRow: `${index + 1} / span 2`,
-                    }}
                 >
                     <ProjectCard
                         title={project.title}
@@ -72,6 +69,6 @@ export default function Projects() {
                 </div>
             ))}
         </div>
-
-    );
+    )
+        ;
 }
