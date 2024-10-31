@@ -42,7 +42,7 @@ export default function NavBar() {
 
                 <GradientBorder borderRadius={50}>
                     <div className="bg-border rounded-full flex items-center justify-center">
-                        <NavBarLink href={"contact"} text={"Contact Me"} />
+                        <NavBarLink href={"#"} text={"comming soon"} />
                     </div>
                 </GradientBorder>
             </div>

@@ -1,5 +1,6 @@
 import SkillsCard from "@/components/organisms/SkillsCard";
 import TestimonialCard from "@/components/molecules/TestimonialCard";
+import LanguageCard from "@/components/organisms/LanguageCard";
 
 export default function About() {
     return (
@@ -9,6 +10,9 @@ export default function About() {
             </div>
             <div className="md:col-span-2">
                 <TestimonialCard />
+            </div>
+            <div className="md:col-span-2">
+                <LanguageCard />
             </div>
         </div>
     );
