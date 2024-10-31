@@ -1,5 +1,4 @@
 import ProjectCard from "@/components/organisms/ProjectCard";
-import {isMobile} from 'react-device-detect';
 
 const projects = [
     {
@@ -69,6 +68,5 @@ export default function Projects() {
                 </div>
             ))}
         </div>
-    )
-        ;
+    );
 }
