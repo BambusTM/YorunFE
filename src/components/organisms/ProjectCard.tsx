@@ -5,7 +5,6 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import {buttonVariants} from "@/components/ui/button";
-import {className} from "postcss-selector-parser";
 
 interface ProjectCardProps {
     title: string;

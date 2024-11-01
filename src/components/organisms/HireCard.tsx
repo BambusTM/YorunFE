@@ -9,7 +9,7 @@ import {toast} from "@/hooks/use-toast";
 
 export default function HireCard() {
     return (
-        <GradientBorder borderRadius={8} className={"h-full"}>
+        <GradientBorder borderRadius={8} className={"h-full w-full"}>
             <div className="mx-auto bg-border rounded-sm p-8 w-full h-full">
                 <div className="flex flex-col md:flex-row justify-between pb-8">
                     <h3 className="muted">
