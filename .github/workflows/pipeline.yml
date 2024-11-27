@@ -11,5 +11,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Make script executable
+        run: chmod +x run.sh
+
       - name: Print Hello World
         run: ./run.sh
